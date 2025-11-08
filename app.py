@@ -13,7 +13,7 @@ st.set_page_config(page_title="Prakiraan Cuaca", page_icon="🌦️", layout="ce
 # ======================
 st.markdown("""
 <div style="text-align:center; background-color:#0077b6; padding:20px; border-radius:10px;">
-    <h1 style="color:white;">🌦️ Prakiraan Cuaca Cerdas</h1>
+    <h1 style="color:white;">🌦️ Prakiraan Cuaca</h1>
     <p style="color:#caf0f8; font-size:18px;">Data real-time dari OpenWeatherMap + Prediksi AI</p>
 </div>
 """, unsafe_allow_html=True)
@@ -104,3 +104,4 @@ if st.button("📆 Lihat Prakiraan & Prediksi AI"):
         fig_pred = px.scatter(df3, x="Jam", y="Suhu (°C)", title="Prediksi Tren Suhu (AI)")
         fig_pred.add_scatter(x=[len(df3)+2], y=[suhu_pred], mode="markers+text", text=["Prediksi"], name="Prediksi", marker=dict(size=10))
         st.plotly_chart(fig_pred)
+
