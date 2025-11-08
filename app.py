@@ -6,7 +6,7 @@ import plotly.express as px
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-st.set_page_config(page_title="Prakiraan Cuaca Cerdas", page_icon="🌦️", layout="centered")
+st.set_page_config(page_title="Prakiraan Cuaca", page_icon="🌦️", layout="centered")
 
 # ======================
 # HEADER
